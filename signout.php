@@ -1,6 +1,8 @@
 <?php
 session_start();
-session_destroy();
-setcookie('succ', 'signed_out');
-header('Location: /index.php'); // go back to log in
+if (!empty($_SERVER['HTTP_REFERER'])) {
+	session_destroy();
+	setcookie('succ', 'signed_out');
+}
+header('Location: /index.php');
 exit;

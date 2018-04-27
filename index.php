@@ -13,7 +13,7 @@ if($_SESSION['valid'] === true) {
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./core/assets/bootstrap.min.css">
 	<style>
 		html,
 		body {
@@ -67,7 +67,7 @@ if($_SESSION['valid'] === true) {
 		  border-top-left-radius: 0;
 		  border-top-right-radius: 0;
 		}
-	</style>	
+	</style>
 	<link href='https://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
   </head>
@@ -75,14 +75,14 @@ if($_SESSION['valid'] === true) {
 	<form class="form-signin" method="post" action="./login.php" style="margin: 3% auto 3% auto;">
 	  <img class="mb-4" src="./core/assets/spud.svg" alt="St. Paul University Dumaguete" width="200" style="opacity: 0.9;">
 	  <h1 class="h3 mb-3 font-weight-normal" style="text-align: initial; border-bottom: 2px solid #afafaf; font-size: 28px; font-family: Anton; width: 80%;">Guidance Services</h1>
-	  <input type="username" name="username" id="inputUsername" class="form-control" placeholder="ID Number" <?php if(!empty($_GET['user']) && !empty($_GET['err']) && $_GET['err'] == 'login_failed') { echo 'value="'.$_GET['user'].'"'; } ?> required>
+	  <input type="username" name="username" id="inputUsername" class="form-control" placeholder="Username" <?php if(!empty($_GET['user']) && !empty($_GET['err']) && $_GET['err'] == 'login_failed') { echo 'value="'.$_GET['user'].'"'; } ?> required>
 	  <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
 	  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
 	  <a href="./recover.php" style="padding-top: 10px; display: block;">Forgot account?</a>
 	  <?php if(!empty($_COOKIE['err']) && $_COOKIE['err'] == 'login_failed') { ?>
 		<div class="alert alert-danger alert-dismissible fade show" role="alert" style="text-align: initial; margin-top: 15px;">
 		  <strong>Login Failed</strong>
-		  <p>The supplied <i>ID Number</i> or <i>Password</i> does not match with any of our records.</p>
+		  <p>The supplied <i>Username</i> or <i>Password</i> does not match with any of our records.</p>
 		  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
 			<span aria-hidden="true">&times;</span>
 		  </button>
@@ -112,6 +112,6 @@ if($_SESSION['valid'] === true) {
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./core/assets/bootstrap.min.js"></script>
   </body>
 </html>
