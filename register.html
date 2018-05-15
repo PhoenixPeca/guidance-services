@@ -256,7 +256,7 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text">+(63)</span>
                 </div>
-                <input type="text" class="form-control" id="username" placeholder="Username" required="">
+                <input type="text" class="form-control" id="username" placeholder="9053211234" required="">
                 <div class="invalid-feedback" style="width: 100%;">
                   Your contact number is invalid.
                 </div>
@@ -265,7 +265,7 @@
 			  
 			  <div class="col-md-6 mb-3">
                 <label for="firstName">Religion *</label>
-                <input type="text" class="form-control" id="religion" placeholder="" value="" required>
+                <input type="text" class="form-control" id="religion" placeholder="Roman Catholic" value="" required>
                 <div class="invalid-feedback">
                   Please provide a valid text input.
                 </div>
@@ -275,7 +275,7 @@
 			<div class="row">
 			  <div class="col-md-6 mb-3">
                 <label for="firstName">Nationality *</label>
-                <input type="text" class="form-control" id="religion" placeholder="" value="" required>
+                <input type="text" class="form-control" id="religion" placeholder="Filipino" value="" required>
                 <div class="invalid-feedback">
                   Please provide a valid text input.
                 </div>
@@ -286,7 +286,50 @@
 			
 			
             <hr class="mb-4">
-            <div class="custom-control custom-checkbox">
+			
+			
+			<div class="row">
+              <div class="col-md-3 mb-3">
+                <label for="lastName">Level *</label>
+                <select class="custom-select d-block w-100" id="state" required>
+                  <option value="">Select...</option>
+				  <option value="01">Male</option>
+				  <option value="02">Female</option>
+                </select>
+				<div class="invalid-feedback">
+                  Please select your gender.
+                </div>
+              </div>
+			  
+              <div class="col-md-4 mb-3">
+                <label for="lastName">Section *</label>
+                <select class="custom-select d-block w-100" id="state" required>
+                  <option value="">Select...</option>
+				  <option value="01">Male</option>
+				  <option value="02">Female</option>
+                </select>
+				<div class="invalid-feedback">
+                  Please select your gender.
+                </div>
+              </div>
+			  
+              <div class="col-md-5 mb-3">
+                <label for="lastName">Adviser *</label>
+                <select class="custom-select d-block w-100" id="state" required>
+                  <option value="">Select...</option>
+				  <option value="01">Male</option>
+				  <option value="02">Female</option>
+                </select>
+				<div class="invalid-feedback">
+                  Please select your gender.
+                </div>
+              </div>
+            </div>
+			
+			
+			
+			
+            <!--<div class="custom-control custom-checkbox">
               <input type="checkbox" class="custom-control-input" id="same-address">
               <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
             </div>
@@ -344,7 +387,7 @@
                   Security code required
                 </div>
               </div>
-            </div>
+            </div>-->
             <hr class="mb-4">
             <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
           </form>
